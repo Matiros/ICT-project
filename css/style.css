@@ -30,7 +30,34 @@ a:active{
     letter-spacing: 4px;
     opacity: 0;
     animation: show .4s linear .8s forwards;
-    text-shadow: 2px 3px 6px rgba(140, 16, 124, 1);
+}
+
+.header h1{
+  text-shadow: 2px 3px 6px rgba(140, 16, 124, 1);
+  margin-right: 2rem;
+}
+
+.headerIconWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+.gh:hover{
+  color: #b6b6b6;
+}
+
+.fb:hover{
+  color: #3b5998;
+}
+
+.tw:hover{
+  color: #1da1f2;
+}
+
+.yt:hover{
+  color: #FF0000;
 }
 
 .wraper{
@@ -271,6 +298,12 @@ a:active{
   }
 }
 
+@media screen and (max-width: 850px) {
+    .headerImgWrapper{
+    display: none;
+  }
+}
+
 @media screen and (max-width: 500px) {
   :root{
     font-size: 13px;
@@ -286,5 +319,8 @@ a:active{
   }
   .about-me img{
     width: 20%;
+  }
+  .headerImgWrapper{
+    display: none;
   }
 }
