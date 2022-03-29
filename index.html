@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateusz Jankowski</title>
+
+    <script src="https://kit.fontawesome.com/ecfa7f49dd.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Mateusz Jankowski</h1>
+    </header>
+    <main class="main">
+        <div class="loader"></div> <!-- animated loader (is hiding after 2s)-->
+        <section class="wraper">
+            <article class="about-me tile no-clicked">
+                <header><h2>O mnie</h2></header>
+                <figure class="myself-img">
+                    <img src="img/me.jpg" alt="zdjęcie autora"/>
+                    <figcaption>Cześć! Nazywam się Mateusz. Jestem uczniem 1 ti. Na tej stronie opowiadam o sobie oraz swoich zainteresowaniach</figcaption>
+                </figure>
+            </article>
+            <section class="info tile no-clicked">
+                <div class="weather" data-weather>
+                    <span data-weather-span>Blad lokalizacji</span>
+                    <img data-weather-img src="img/icon/face-frown-regular.svg" alt="symbol obecenj pogody"/>
+                </div>
+                <div class="date" data-date>
+                    <span data-date-span></span>
+                </div>
+                <div class="time" data-time>
+                    <span data-time-span=""></span>
+                </div>
+
+            </section>
+            <section class="hobby tile down">
+                <a href="hobby.html">
+                    <figure>
+                        <img src="img/icon/gamepad-solid.svg" alt="ikonka hobby">
+                        <figcaption>Hobby</figcaption>
+                    </figure>
+                </a>
+            </section>
+            <section class="whereIwas tile down">
+                <a href="whereIwas.html">
+                    <figure>
+                        <img src="img/icon/plane-solid.svg" alt="ikonka gdzie byłem">
+                        <figcaption>Gdzie byłem</figcaption>
+                    </figure>
+                </a>
+            </section>
+            <section class="facts tile down">
+                <a href="facts.html">
+                    <figure>
+                        <img src="img/icon/newspaper-solid.svg" alt="ikonka gdzie byłem">
+                        <figcaption>Ciekawostki</figcaption>
+                    </figure>
+                </a>
+            </section>
+          </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
