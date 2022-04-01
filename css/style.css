@@ -34,7 +34,7 @@ a:active{
 }
 
 .header h1{
-  text-shadow: 2px 3px 6px rgba(140, 16, 124, 1);
+  text-shadow: 2px 3px 6px #8c107c;
   margin-right: 2rem;
 }
 
@@ -45,25 +45,25 @@ a:active{
   font-size: 1.8rem;
 }
 
-.header i{
+.header a{
   transition: all .3s ease;
 }
 
-.header i:hover{ 
-  transform: scale(1.1);
+.header a:hover{ 
+  transform: scale(1.2);
 }
 
-.header i:active{ 
+.header a:active{ 
   transform: scale(.7);
 }
 
 .sub-header{
   display: flex;
   justify-content: center;
-  margin: 1rem 1rem 0rem 1rem;
+  margin: 1rem 1rem 2rem 1rem;
   letter-spacing: 4px;
-  margin-top: 1rem;
-  width: 85vw;
+  width: 80vw;
+  font-size: 1.5rem;
   float: right;
 }
 
@@ -285,7 +285,7 @@ nav {
   height: 100vh;
   left: calc(1vw);
   top: calc(50% - 50vh);
-  font-size: 5rem;
+  font-size: 4rem;
   width: 13vw;
   margin: 0 1vw;
   text-align: center;
@@ -293,21 +293,27 @@ nav {
   background-color: rgb(51, 48, 48);
 }
 
-.buttons i{
-  border-radius: 15px;
+.buttons div:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
 }
 
-.buttons figure:hover{
+.buttons div:active{
+  transform: scale(.85);
+}
+
+.buttons div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  width: 10vw;
+  border-radius: 15px;
   transition: all .3s ease;
 }
 
-.buttons figure:hover{
-  transform: scale(.95) translateY(.5rem);
-  cursor: pointer;
-}
-
-.buttons figure:active{
-  transform: scale(.85);
+.buttons i{
+  color: #000;
 }
 
 .gamepad{
@@ -320,6 +326,71 @@ nav {
 
 .flight{
   background-color: #30f029;
+}
+
+.newspaper{
+  background-color: #1da1f2;
+}
+
+.places{
+  float: right;
+  margin: 1rem;
+  width: 80vw;
+}
+
+.place{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1da1f2;
+  border-radius: 15px;
+  margin: 1rem 3rem 4rem 3rem;
+  border: #d4d2d2 solid 4px;
+}
+
+.place:first-child{
+  margin-top: 0;
+}
+
+.place-header{
+  font-size: 3rem;
+  width: 100%;
+  height: 18vh;
+  border-radius: 15px;
+  text-align: center;
+  text-shadow: 8px 5px 9px #000000;
+}
+
+.place-atricle{
+  margin: 3rem 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.barcelona{
+  background-image: url(../img/places/barcelona.jpg);
+}
+
+.praga{
+  background-image: url(../img/places/praga.jpg);
+}
+
+.klodzko{
+  background-image: url(../img/places/klodzko.jpg);
+}
+
+.warszawa{
+  background-image: url(../img/places/warszawa.jpg);
+}
+
+.berlin{
+  background-image: url(../img/places/berlin.jpg);
+}
+
+.smaller{
+  font-size: 6rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .loader{

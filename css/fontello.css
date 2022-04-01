@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?16211488');
-  src: url('../font/fontello.eot?16211488#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?16211488') format('woff2'),
-       url('../font/fontello.woff?16211488') format('woff'),
-       url('../font/fontello.ttf?16211488') format('truetype'),
-       url('../font/fontello.svg?16211488#fontello') format('svg');
+  src: url('../font/fontello.eot?79737296');
+  src: url('../font/fontello.eot?79737296#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?79737296') format('woff2'),
+       url('../font/fontello.woff?79737296') format('woff'),
+       url('../font/fontello.ttf?79737296') format('truetype'),
+       url('../font/fontello.svg?79737296#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?16211488#fontello') format('svg');
+    src: url('../font/fontello.svg?79737296#fontello') format('svg');
   }
 }
 */
@@ -62,4 +62,5 @@
 .icon-frown:before { content: '\f119'; } /* '' */
 .icon-gamepad:before { content: '\f11b'; } /* '' */
 .icon-youtube-play:before { content: '\f16a'; } /* '' */
+.icon-soccer-ball:before { content: '\f1e3'; } /* '' */
 .icon-newspaper:before { content: '\f1ea'; } /* '' */
