@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Lato&family=Oswald:wght@200;300;400&family=Poppins:wght@500&family=Raleway:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap');
 *,*::after,*::before{
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ a:active{
 :root{
     font-family: 'Lato', sans-serif;
     font-size: 20px;
-    background-color: rgb(58, 57, 57);
+    background-color: #3a3939;
     color: #f0ffff;
 }
 
@@ -45,15 +45,15 @@ a:active{
   font-size: 1.8rem;
 }
 
-.header a{
+.headerIconWrapper a{
   transition: all .3s ease;
 }
 
-.header a:hover{ 
+.headerIconWrapper a:hover{ 
   transform: scale(1.2);
 }
 
-.header a:active{ 
+.headerIconWrapper a:active{ 
   transform: scale(.7);
 }
 
@@ -62,14 +62,17 @@ a:active{
   justify-content: center;
   margin: 1rem 1rem 2rem 1rem;
   letter-spacing: 4px;
-  width: 80vw;
+  width: 85vw;
   font-size: 1.5rem;
   float: right;
+  background-color: #2e2c2c;
+  border-radius: 10px;
+
 }
 
 .sub-header h1{
   text-shadow: 2px 3px 6px rgba(140, 16, 124, 1);
-  margin-right: 2rem;
+  margin: 1rem 2rem 1rem 0;
 }
 
 .gh:hover{
@@ -126,11 +129,12 @@ a:active{
     flex-direction: column;
     width: calc(50% - 2.8rem);
     height: 50%;
+    min-height: 280px;
 }
 
 .about-me header{
     font-size: 1.6rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
 .myself-img{
@@ -142,6 +146,7 @@ a:active{
 
 .myself-img img{
     border-radius: 50%;
+    height: 70%;
 }
 
 .myself-img figcaption{
@@ -159,6 +164,7 @@ a:active{
     grid-template-rows: repeat(2,1fr);
     font-family: 'Oswald';
     font-weight: 700;
+    min-height: 280px;
 }
 
 .weather{
@@ -168,6 +174,7 @@ a:active{
   font-size: 1.5rem;
   margin: .5rem;
   letter-spacing: 1px;
+  min-height: 130px;
 }
 
 .weather span{
@@ -180,6 +187,10 @@ a:active{
   margin-right: 1rem;
 }
 
+.weather i{
+  font-size: 4rem;
+}
+
 .date{
   display: flex;
   justify-content: center;
@@ -187,6 +198,7 @@ a:active{
   font-size: 2.3rem;
   letter-spacing: 2px;
   border-left: 2px #708090 solid;
+  min-height: 130px;
 }
 
 .time{
@@ -197,6 +209,7 @@ a:active{
   font-size: 5rem;
   letter-spacing: 4px;
   border-top: 2px #708090 solid;
+  min-height: 130px;
 }
 
 nav {
@@ -221,6 +234,7 @@ nav {
   margin-top: 0;
   width: 27%;
   height: 40%;
+  min-height: 200px;
 }
 
 .down figure{
@@ -244,53 +258,62 @@ nav {
 } 
 
 .facts-wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 0rem 0;
-  width: 85vw;
   float: right;
-  height: 100%;
+  margin: 1rem;
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .fact{
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: #37b4e6;
-  border-radius: 15px;
-  margin: 2rem 4rem;
-}
-
-.fact img{
+  background-color: #1da1f2;
   border-radius: 15px 0 0 15px;
-  height: 100%;
+  width: 80vw;
+  transform: translateX(47vw);
+  transition: all .4s ease;
 }
 
 .fact span{
-  margin-left: 1rem;
-  width: 60vw;
+  font-size: 2.5rem;
   text-align: center;
-  font-size: 2rem;
-  font-family: 'Oswald';
-  letter-spacing: 2px;
+  width: 40vw;
 }
+.fact img{
+  width: 40vw;
+  height: 22vw;
+  border-radius: 15px 0 0 15px;
+}
+
+.fact img:hover{
+  cursor: pointer;
+}
+
+.fact:hover{
+  transform: translateX(7vw);
+}
+
 
 .buttons{
   position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  align-items: center;
+  height: 94vh;
   left: calc(1vw);
   top: calc(50% - 50vh);
   font-size: 4rem;
-  width: 13vw;
+  width: 20vh;
+  min-width: 100px;
   margin: 0 1vw;
   text-align: center;
   padding: 1.5rem 1rem 1.5rem 1rem;
-  background-color: rgb(51, 48, 48);
+  background-color: #2e2c2c;;
+  margin: 1rem 0;
+  border-radius: 15px;
 }
 
 .buttons div:hover {
@@ -307,7 +330,9 @@ nav {
   align-items: center;
   justify-content: center;
   height: 15vh;
-  width: 10vw;
+  width: 15vh;
+  min-width: 85px;
+  min-height: 85px;
   border-radius: 15px;
   transition: all .3s ease;
 }
@@ -346,6 +371,7 @@ nav {
   border-radius: 15px;
   margin: 1rem 3rem 4rem 3rem;
   border: #d4d2d2 solid 4px;
+  min-height: 300px;
 }
 
 .place:first-child{
@@ -356,6 +382,7 @@ nav {
   font-size: 3rem;
   width: 100%;
   height: 18vh;
+  min-height: 90px;
   border-radius: 15px;
   text-align: center;
   text-shadow: 8px 5px 9px #000000;
@@ -369,23 +396,23 @@ nav {
 }
 
 .barcelona{
-  background-image: url(../img/places/barcelona.jpg);
+  background-image: url(../img/places/barcelona.png);
 }
 
 .praga{
-  background-image: url(../img/places/praga.jpg);
+  background-image: url(../img/places/praga.png);
 }
 
 .klodzko{
-  background-image: url(../img/places/klodzko.jpg);
+  background-image: url(../img/places/klodzko.png);
 }
 
 .warszawa{
-  background-image: url(../img/places/warszawa.jpg);
+  background-image: url(../img/places/warszawa.png);
 }
 
 .berlin{
-  background-image: url(../img/places/berlin.jpg);
+  background-image: url(../img/places/berlin.png);
 }
 
 .smaller{
@@ -393,11 +420,63 @@ nav {
   margin-bottom: 1rem !important;
 }
 
+.hobby-wraper{
+  float: right;
+  margin: 1rem;
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hobby-article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e2c2c;;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.hobby-article:first-child{
+  margin-top: 0 !important;
+}
+
+.hobby-header{
+  font-size: 2rem;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-family: 'Cabin'; 
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.hobby-img-wraper img{
+  width: 25vw;
+  height: 14vw;
+  margin: 1rem;
+  transition: all .3s ease;
+  filter:blur(1px);
+}
+
+.hobby-img-wraper img:hover{
+  filter:blur(0px);
+  transform:scale(1.1);
+}
+
+.canvas-wraper{
+  float: right;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+}
+
 .loader{
     margin: auto;
     border-radius: 50%;
     border: 15px solid #f5f2f2;
-    border-left: 15px solid red;
+    border-left: 15px solid #ff0000;
     width: 100px;
     height: 100px;
     position: fixed;

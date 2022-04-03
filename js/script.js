@@ -12,11 +12,11 @@ function App(){
     this.UiSelectors = {
         weather: document.querySelector('[data-weather]'),
         weatherSpan: document.querySelector('[data-weather-span]'),
-        weatherImg: document.querySelector('[data-weather-img]'),
+        weatherIcon: document.querySelector('[data-weather-icon]'),
         date: document.querySelector('[data-date]'),
         dateSpan: document.querySelector('[data-date-span]'),
         time: document.querySelector('[data-time]'),
-        timeSpan: document.querySelector('[data-time-span]'),
+        timeSpan: document.querySelector('[data-time-span]')
     }
 
     this.getLocation = function(){
@@ -45,6 +45,9 @@ function App(){
         const city = data.name;
         const img  = `img/weather/${data.weather[0].icon}.png`;
         
+        this.UiSelectors.weatherIcon.remove();
+        this.UiSelectors.weather.insertAdjacentHTML('beforeend','<img data-weather-img src="" alt="ikona aktualnej pogody"/>');
+        this.UiSelectors.weatherImg = document.querySelector('[data-weather-img]'),
         this.UiSelectors.weatherSpan.innerHTML = `${city}: ${temp}`;
         this.UiSelectors.weatherImg.src = img; 
     }
